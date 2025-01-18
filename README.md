@@ -3,8 +3,11 @@ In questo progetto si va a  costruire un modello in grado di filtrare i commenti
 PREPROCESSING:
 -Effettuo il preprocessing:
 Definisco la funzione preprocess_text. Questa funzione esegue la rimozione di punteggiatura, conversione a minuscolo, tokenizzazione, rimozione delle stopwords e lemmatizzazione.
+
 -Separo le features dalle label: Separo i commenti preprocessati (X) dalle etichette (y) 
+
 -Divido il dataset in train e test: Utilizziamo train_test_split per dividere il dataset in dati di training e di test. 
+
 
 CREAZIONE DEL MODELLO:
 Inizio con l'addestramento e la valutazione di due modelli più semplici per la classificazione di testi: la regressione logistica e il Naive Bayes. Nel primo caso utilizzo LogisticRegression con il parametro class_weight='balanced' in quanto abbiamo sbilanciamento di classi. Nel caso sei Naive Bayes addestro diversi modelli per vedere quale performa meglio. In entrambi i casi, trasformo i testi in feature numeriche tramite TfidfVectorizer. Inoltre, tramite OneVsRestClassifier adatterò modelli di classificazione binaria a problemi di classificazione multilabel. Le Metriche da tenere in considerazione per la valutazione del modello sono l'F1-score, la precisione e il recall, più appropriate perché tengono conto dello sbilanciamento delle classi e della natura multilabel del problema.
