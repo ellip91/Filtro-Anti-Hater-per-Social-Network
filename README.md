@@ -3,7 +3,7 @@ In questo progetto si va a  costruire un modello in grado di filtrare i commenti
 PREPROCESSING:
 -Effettuo il preprocessing:
 Definisco la funzione preprocess_text. Questa funzione esegue la rimozione di punteggiatura, conversione a minuscolo, tokenizzazione, rimozione delle stopwords e lemmatizzazione.
--Separo le features dalle label: Separo i commenti preprocessati (X) dalle etichette (y)
+-Separo le features dalle label: Separo i commenti preprocessati (X) dalle etichette (y) 
 -Divido il dataset in train e test: Utilizziamo train_test_split per dividere il dataset in dati di training e di test. 
 
 CREAZIONE DEL MODELLO:
