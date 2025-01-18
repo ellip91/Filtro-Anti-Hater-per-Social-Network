@@ -1,6 +1,7 @@
 In questo progetto si va a  costruire un modello in grado di filtrare i commenti degli utenti in base al grado di dannosità del linguaggio.
 
-PREPROCESSING:
+PREPROCESSING: 
+
 -Effettuo il preprocessing:
 Definisco la funzione preprocess_text. Questa funzione esegue la rimozione di punteggiatura, conversione a minuscolo, tokenizzazione, rimozione delle stopwords e lemmatizzazione.
 
